@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		AMAZON RECOMMENDATION SYSTEM
+	</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" id="sty" display="inline-block">
+	<h4>AMAZON RECOMMENDATION SYSTEM</h4>
+ <form class="form-horizontal" action="/submit" method="POST">
+ 	<div class="form-group">
+ 	<label class="control-label col-sm-2">Train Test split</label>
+    <div class="col-sm-10">
+ 	<input type="number" name="tts" placeholder="Train Test Split Ratio" step="0.01"
+ 	min="0.66" max="0.9" required>
+ 	</div>
+    </div>
+ 	<div class="form-group">
+ 		<label class="control-label col-sm-2">Hidden nodes</label>
+ 	    <div class="col-sm-10">
+ 	<input type="number" name="nh" placeholder="Hidden nodes" min="1" max="100" required>
+ 	</div></div>
+ 	<div class="form-group">
+ 		<label class="control-label col-sm-2">Epoch</label>
+    <div class="col-sm-10">
+    <input type="number" name="epochs" placeholder="Epoch" max="100" min="1" required>
+ 	</div></div>
+  <div class="form-group">
+  	<div class="col-sm-10 col-sm-offset-2">
+ 	<button type="submit" class="btn-primary">Submit</button>
+   </div></div>
+</form>
+</div>
+</body>
+</html>
